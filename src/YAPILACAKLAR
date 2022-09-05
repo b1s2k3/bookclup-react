@@ -1,0 +1,14 @@
+2- Homepage search kısmında template literal ile regex kullan.
+3-Librarydeki kitaplar da searchlensin. 
+4-Librarydeki kitaplara yorum ekleme.
+5-Contexleri global providera aktar
+6-search operasyonundan sonra tekrar searchlettir.
+
+
+SORUN
+searchlenen booku tanımıyor.
+search buttonuna bastığında book stateni tamamen değiştirdiğin için librarylisteteki booklar gidiyor.
+NASIL ÇÖZÜLÜR?
+serclediğinde books statini tamamen değiştirmek yerine başka bİr state oluşturarak.
+book stati nereden geliyor 
+
