@@ -36,13 +36,15 @@ const App = () => {
       return setLibItem(libList);
     }
   };
+  
+    const removeFromLibrary = (id) => {
+    const newList = [...libItems];
+    newList.splice(id,1);
+    setLibItem(newList);
+    
+  };
 
-  // function searchBook(){
-  //     return books.filter(
-  //     (book) => book.title.toLowerCase().indexOf(searchItem.toLowerCase()) > -1
-  //   );
 
-  // };
 
   function searchBook(books) {
     return books.filter((book) => {
