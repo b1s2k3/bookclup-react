@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import LibraryContex from "../context/Context";
 
 const LibraryPage = () => {
-  const { libItems } = useContext(LibraryContex);
+  const { libItems, removeFromLibrary } = useContext(LibraryContex);
 
   return (
     <div className="library-page">
@@ -13,14 +13,16 @@ const LibraryPage = () => {
           <th>Author</th>
           <th>Year</th>
           <th>Page</th>
+          <th></th>
         </tr>
 
-        {libItems.map((libItem) => (
+        {libItems.map((libItem,id) => (
           <tr>
             <td>{libItem.title}</td>
             <td>{libItem.author}</td>
             <td>{libItem.year}</td>
             <td>{libItem.pages}</td>
+            <td><button onClick={() => removeFromLibrary(id)}>Remove</button></td>
           </tr>
         ))}
       </table>
@@ -29,6 +31,5 @@ const LibraryPage = () => {
 };
 
 export default LibraryPage;
-
 
 
