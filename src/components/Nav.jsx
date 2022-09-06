@@ -25,6 +25,3 @@ const Nav = () => {
 }
 
 export default Nav;
-
-
-// Apply Link to
