@@ -12,7 +12,7 @@ const BookCard = ({ book: {id, title, author, year }}) => {
       </h4>
       <h5>Written by {author}</h5>
       <h6>{year}</h6>
-      <button onClick={() => addToLibrary(id)}><i className="bi bi-plus-circle-fill"></i></button>
+      <button title="add to library" onClick={() => addToLibrary(id)}><i className="bi bi-plus-circle-fill"></i></button>
       
     </div>
   );
